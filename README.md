@@ -3,14 +3,15 @@
 
 ```sql
 Tim:
-Data manager: Nurzatil 
+Data manager: Sofia Octaviana
 Shiny developer: Adzkar Adlu 
-Technical Writer: 
+Technical Writer: Nurzatil Aqmar
 ```
 
 ## Entity Relationship Diagram
 
 ![rating](https://user-images.githubusercontent.com/125889903/220243151-8edb3b13-5a3f-4362-871e-053fc1255282.png)
+
 
 
 ## 1. Tabel Judul Film
