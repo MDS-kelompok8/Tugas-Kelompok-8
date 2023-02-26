@@ -1,11 +1,13 @@
 # DATABASE RATING FILM BERDASARKAN IMDB 
 ![movie](https://user-images.githubusercontent.com/125889903/220244275-5e26e547-c6f1-4e5a-ae71-779bac691ed6.png)
 
+Rating merupakan salah satu acuan kualitas film-film dunia. Internet Movie Database alias IMDB merupakan situs pengulas dan rating film serta serial TV dengan mekanisme rating berdasarkan voting dari penonton. 
+
 ```sql
 Tim:
-Data manager: Sofia Octaviana
-Shiny developer: Adzkar Adlu 
-Technical Writer: Nurzatil Aqmar
+Data manager: Sofia Octaviana (G1501221036)
+Shiny developer: Adzkar Adlu (G1501211033)
+Technical Writer: Nurzatil Aqmar (G1501222044)
 ```
 
 ## Entity Relationship Diagram
