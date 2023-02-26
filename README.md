@@ -17,53 +17,69 @@ Technical Writer: Nurzatil Aqmar
 ## 1. Tabel Judul Film
 ```sql 
 CREATE TABLE IF NOT EXISTS public.judul (
-    movie_id character varying(10) NOT NULL,
-    judul character varying(255) NOT NULL,
-    tahun timestamp NOT NULL,
-    metascore integer NOT NULL,
-    reviewer character varying(20) NOT NULL,
-    PRIMARY KEY (movie_id)
+    movie_id character varying(10) COLLATE pg_catalog."default" NOT NULL,
+    judul character varying(255) COLLATE pg_catalog."default" NOT NULL,
+    tahun timestamp without time zone NOT NULL,
+    CONSTRAINT judul_pkey PRIMARY KEY (movie_id)
 );
 ```
 
 ## 2. Tabel Rating Film 
 ```sql
 CREATE TABLE IF NOT EXISTS public.rating (
-    judul character varying(255) NOT NULL,
-    IMDB_rating integer NOT NULL,
-    Kategori_rating character varying(10) NOT NULL,
-    reviewer character varying(20) NOT NULL,
-    PRIMARY KEY (judul)
+    movie_id character varying(10) COLLATE pg_catalog."default" NOT NULL,
+    imdb_rating integer NOT NULL,
+    kategori_rating character varying(10) COLLATE pg_catalog."default" NOT NULL,
+    metascore integer NOT NULL,
+    CONSTRAINT rating_pkey PRIMARY KEY (movie_id),
+    CONSTRAINT rating_movie_id_fkey FOREIGN KEY (movie_id)
+        REFERENCES public.judul (movie_id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+
 );
 ```
 
 ## 3. Tabel Genre Film
 ```sql
 CREATE TABLE IF NOT EXISTS public.genre (
-    judul character varying(255) NOT NULL,
-    kategori_rating character varying(10) NOT NULL,
-    genre character varying(10) NOT NULL,
-    movie_id character varying(10) NOT NULL,
-    PRIMARY KEY (movie_id)
+    writer_id character varying(10) COLLATE pg_catalog."default" NOT NULL,
+    movie_id character varying(10) COLLATE pg_catalog."default" NOT NULL,
+    genre text COLLATE pg_catalog."default" NOT NULL,
+    CONSTRAINT genre_pkey PRIMARY KEY (writer_id, movie_id),
+    CONSTRAINT genre_judul_fkey FOREIGN KEY (movie_id)
+        REFERENCES public.judul (movie_id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION,
+    CONSTRAINT genre_writer_id_fkey FOREIGN KEY (writer_id)
+        REFERENCES public.penulis_naskah (writer_id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
 );
 ```
 
 ## 4. Tabel Daftar Pemain Film
 ```sql
-CREATE TABLE IF NOT EXISTS public.pemain_film(
+CREATE TABLE IF NOT EXISTS public.pemain_film (
     movie_id character varying(10) COLLATE pg_catalog."default" NOT NULL,
-    cast_movie text NOT NULL,
-    writer text NOT NULL,
-    directur text NOT NULL,
-	judul character varying(255) NOT NULL,
-    CONSTRAINT pemain_film_pkey PRIMARY KEY (movie_id, judul),
-    CONSTRAINT pemain_film_tahun_fkey FOREIGN KEY (judul)
-        REFERENCES public.rating (judul) MATCH SIMPLE
-        ON UPDATE NO ACTION
-        ON DELETE NO ACTION,
+    first_name text COLLATE pg_catalog."default" NOT NULL,
+    last_name text COLLATE pg_catalog."default" NOT NULL,
+    CONSTRAINT pemain_film_pkey PRIMARY KEY (movie_id),
     CONSTRAINT pemain_film_movie_id_fkey FOREIGN KEY (movie_id)
         REFERENCES public.judul (movie_id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
+
+);
+```
+
+## 5. Tabel Penulis Naskah
+```sql
+CREATE TABLE IF NOT EXISTS public.penulis_naskah (
+    writer_id character varying(10) COLLATE pg_catalog."default" NOT NULL,
+    writer_name text COLLATE pg_catalog."default" NOT NULL,
+    director text COLLATE pg_catalog."default" NOT NULL,
+    reviewer character varying(20) COLLATE pg_catalog."default" NOT NULL,
+    CONSTRAINT penulis_naskah_pkey PRIMARY KEY (writer_id)
 );
 ```
