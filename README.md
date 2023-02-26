@@ -12,7 +12,7 @@ Technical Writer: Nurzatil Aqmar (G1501222044)
 
 ## Entity Relationship Diagram
 
-![rating](https://user-images.githubusercontent.com/125889903/220243151-8edb3b13-5a3f-4362-871e-053fc1255282.png)
+![diagram relation](https://user-images.githubusercontent.com/125889903/221397523-24efc735-fa8a-4c7d-921d-489c4e7b9f1f.jpeg)
 
 
 
