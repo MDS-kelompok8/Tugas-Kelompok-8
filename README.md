@@ -19,10 +19,10 @@ Technical Writer: Nurzatil Aqmar (G1501222044)
 ## 1. Tabel Judul Film
 Tabel judul terdiri dari 4 atribut yaitu `movie_id`, `judul`, `tahun` dan `durasi_film`.
 
-`movie_id` = id dari masing-masing film yang bersifat unik
-`judul` = judul dari 250 film
-`tahun` = tahun rilis film
-`durasi_film` = durasi dari film(menit)
+`movie_id` = id dari masing-masing film yang bersifat unik <br /> 
+`judul` = judul dari 250 film <br /> 
+`tahun` = tahun rilis film <br /> 
+`durasi_film` = durasi dari film(menit) <br /> 
 
 ```sql 
 CREATE TABLE IF NOT EXISTS public.judul (
@@ -37,9 +37,9 @@ CREATE TABLE IF NOT EXISTS public.judul (
 ## 2. Tabel Rating Film 
 Tabel rating terdiri dari 4 atribut yaitu `movie_id`, `imdb_rating`, dan `vote`.
 
-`movie_id` = id dari masing-masing film yang bersifat unik
-`imdb_rating` = rata-rata penilaian dari reviewer.
-`vote` = banyaknya penilai film
+`movie_id` = id dari masing-masing film yang bersifat unik <br /> 
+`imdb_rating` = rata-rata penilaian dari reviewer <br /> 
+`vote` = banyaknya penilai film <br /> 
 
 ```sql
 CREATE TABLE IF NOT EXISTS public.rating (
