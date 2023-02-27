@@ -1,7 +1,8 @@
-# DATABASE RATING FILM BERDASARKAN IMDB 
+# *DATABASE RATING FILM BERDASARKAN IMDB* 
 ![movie](https://user-images.githubusercontent.com/125889903/220244275-5e26e547-c6f1-4e5a-ae71-779bac691ed6.png)
 
-Rating merupakan salah satu acuan kualitas film-film dunia. Internet Movie Database alias IMDB merupakan situs pengulas dan rating film serta serial TV dengan mekanisme rating berdasarkan voting dari penonton. 
+Dalam projek ini kelompok kami akan mengembangkan database yang memuat film dengan rekomendasi terbaik berdasarkan IMDB. Internet Movie Database alias IMDB merupakan situs pengulas dan rating film serta serial TV dengan mekanisme rating berdasarkan voting dari penonton. Website IMDB berisi tentang rekomendasi film terbaik atau populer yang terdiri dari 250 film. IMDB yang 
+Berdasarkan database yang kami kembangkan, nantinya pengguna dapat mencari film yang diinginkan berdasarkan kategori pemain film, tahun rilis, dan sebagainya.
 
 ```sql
 Tim:
@@ -12,27 +13,39 @@ Technical Writer: Nurzatil Aqmar (G1501222044)
 
 ## Entity Relationship Diagram
 
-![diagram relation](https://user-images.githubusercontent.com/125889903/221397523-24efc735-fa8a-4c7d-921d-489c4e7b9f1f.jpeg)
-
+![rating_new](https://user-images.githubusercontent.com/125889903/221503018-4e6b78bb-15ab-4a35-8803-2d90f8cec8d6.png)
 
 
 ## 1. Tabel Judul Film
+Tabel judul terdiri dari 4 atribut yaitu `movie_id`, `judul`, `tahun` dan `durasi_film`.
+
+`movie_id` = id dari masing-masing film yang bersifat unik
+`judul` = judul dari 250 film
+`tahun` = tahun rilis film
+`durasi_film` = durasi dari film(menit)
+
 ```sql 
 CREATE TABLE IF NOT EXISTS public.judul (
-    movie_id character varying(10) COLLATE pg_catalog."default" NOT NULL,
-    judul character varying(255) COLLATE pg_catalog."default" NOT NULL,
-    tahun timestamp without time zone NOT NULL,
+    movie_id text COLLATE pg_catalog."default" NOT NULL,
+    judul text COLLATE pg_catalog."default" NOT NULL,
+    tahun integer NOT NULL,
+    durasi_film integer NOT NULL,
     CONSTRAINT judul_pkey PRIMARY KEY (movie_id)
 );
 ```
 
 ## 2. Tabel Rating Film 
+Tabel rating terdiri dari 4 atribut yaitu `movie_id`, `imdb_rating`, dan `vote`.
+
+`movie_id` = id dari masing-masing film yang bersifat unik
+`imdb_rating` = rata-rata penilaian dari reviewer.
+`vote` = banyaknya penilai film
+
 ```sql
 CREATE TABLE IF NOT EXISTS public.rating (
-    movie_id character varying(10) COLLATE pg_catalog."default" NOT NULL,
+    movie_id text COLLATE pg_catalog."default" NOT NULL,
     imdb_rating integer NOT NULL,
-    kategori_rating character varying(10) COLLATE pg_catalog."default" NOT NULL,
-    metascore integer NOT NULL,
+    vote integer NOT NULL,
     CONSTRAINT rating_pkey PRIMARY KEY (movie_id),
     CONSTRAINT rating_movie_id_fkey FOREIGN KEY (movie_id)
         REFERENCES public.judul (movie_id) MATCH SIMPLE
@@ -43,29 +56,37 @@ CREATE TABLE IF NOT EXISTS public.rating (
 ```
 
 ## 3. Tabel Genre Film
+Tabel genre terdiri dari 3 atribut yaitu `director_id`, `movie_id`, `genre`.
+
+`director` = sutradara film
+`movie_id` = id dari masing-masing film yang bersifat unik
+`genre` = klasifikasi atau jenis dari film yang dibuat seperti triller, 
 ```sql
 CREATE TABLE IF NOT EXISTS public.genre (
-    writer_id character varying(10) COLLATE pg_catalog."default" NOT NULL,
+    director_id character varying(10) COLLATE pg_catalog."default" NOT NULL,
     movie_id character varying(10) COLLATE pg_catalog."default" NOT NULL,
     genre text COLLATE pg_catalog."default" NOT NULL,
-    CONSTRAINT genre_pkey PRIMARY KEY (writer_id, movie_id),
+    CONSTRAINT genre_pkey PRIMARY KEY (director_id, movie_id),
     CONSTRAINT genre_judul_fkey FOREIGN KEY (movie_id)
         REFERENCES public.judul (movie_id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION,
-    CONSTRAINT genre_writer_id_fkey FOREIGN KEY (writer_id)
-        REFERENCES public.penulis_naskah (writer_id) MATCH SIMPLE
+    CONSTRAINT genre_director_id_fkey FOREIGN KEY (director_id)
+        REFERENCES public.director (director_id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );
 ```
 
 ## 4. Tabel Daftar Pemain Film
+Tabel daftar pemain film terdiri dari 2 atribut yaitu `movie_id`, dan `pemain_film`.
+
+`movie_id` = id dari masing-masing film yang bersifat unik
+`pemain_film` = aktor/aktris yang memerankan film
 ```sql
 CREATE TABLE IF NOT EXISTS public.pemain_film (
-    movie_id character varying(10) COLLATE pg_catalog."default" NOT NULL,
-    first_name text COLLATE pg_catalog."default" NOT NULL,
-    last_name text COLLATE pg_catalog."default" NOT NULL,
+    movie_id text COLLATE pg_catalog."default" NOT NULL,
+    pemain_film text COLLATE pg_catalog."default" NOT NULL,
     CONSTRAINT pemain_film_pkey PRIMARY KEY (movie_id),
     CONSTRAINT pemain_film_movie_id_fkey FOREIGN KEY (movie_id)
         REFERENCES public.judul (movie_id) MATCH SIMPLE
@@ -75,13 +96,17 @@ CREATE TABLE IF NOT EXISTS public.pemain_film (
 );
 ```
 
-## 5. Tabel Penulis Naskah
+## 5. Tabel Sutradara
+Tabel penulis naskah terdiri dari 3 atribut yaitu `director_id`, `first_name`, dan `last_name`.
+
+`director` = sutradara film
+`first_name` = nama depan dari sutradara film
+`last_name` = nama belakang dari sutradara film
 ```sql
-CREATE TABLE IF NOT EXISTS public.penulis_naskah (
-    writer_id character varying(10) COLLATE pg_catalog."default" NOT NULL,
-    writer_name text COLLATE pg_catalog."default" NOT NULL,
-    director text COLLATE pg_catalog."default" NOT NULL,
-    reviewer character varying(20) COLLATE pg_catalog."default" NOT NULL,
-    CONSTRAINT penulis_naskah_pkey PRIMARY KEY (writer_id)
+CREATE TABLE IF NOT EXISTS public.director (
+    director_id text COLLATE pg_catalog."default" NOT NULL,
+    first_name text COLLATE pg_catalog."default" NOT NULL,
+    last_name text COLLATE pg_catalog."default" NOT NULL,
+    CONSTRAINT director_pkey PRIMARY KEY (director_id)
 );
 ```
