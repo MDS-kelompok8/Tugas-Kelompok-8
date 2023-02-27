@@ -1,8 +1,5 @@
 # *DATABASE RATING FILM BERDASARKAN IMDB* 
-![movie](https://user-images.githubusercontent.com/125889903/220244275-5e26e547-c6f1-4e5a-ae71-779bac691ed6.png)
-
-Dalam projek ini kelompok kami akan mengembangkan database yang memuat film dengan rekomendasi terbaik berdasarkan IMDB. Internet Movie Database alias IMDB merupakan situs pengulas dan rating film serta serial TV dengan mekanisme rating berdasarkan voting dari penonton. Website IMDB berisi tentang rekomendasi film terbaik atau populer yang terdiri dari 250 film. IMDB yang 
-Berdasarkan database yang kami kembangkan, nantinya pengguna dapat mencari film yang diinginkan berdasarkan kategori pemain film, tahun rilis, dan sebagainya.
+![gambar film review](https://user-images.githubusercontent.com/125889903/221512667-6f595242-8ff4-4280-b7bf-0cfb1192f9ba.png)
 
 ```sql
 Tim:
@@ -10,11 +7,13 @@ Data manager: Sofia Octaviana (G1501221036)
 Shiny developer: Adzkar Adlu (G1501211033)
 Technical Writer: Nurzatil Aqmar (G1501222044)
 ```
+Dalam projek ini kelompok kami akan mengembangkan database yang memuat film dengan rekomendasi terbaik berdasarkan IMDB. Internet Movie Database alias IMDB merupakan situs pengulas dan rating film serta serial TV dengan mekanisme rating berdasarkan voting dari penonton. Website IMDB berisi tentang rekomendasi film terbaik atau populer yang terdiri dari 250 film. IMDB 
+Berdasarkan database yang kami kembangkan, nantinya pengguna dapat mencari film yang diinginkan berdasarkan kategori pemain film, tahun rilis, dan sebagainya.
+***
 
 ## Entity Relationship Diagram
 
 ![rating_new](https://user-images.githubusercontent.com/125889903/221503018-4e6b78bb-15ab-4a35-8803-2d90f8cec8d6.png)
-
 
 ## 1. Tabel Judul Film
 Tabel judul terdiri dari 4 atribut yaitu `movie_id`, `judul`, `tahun` dan `durasi_film`.
