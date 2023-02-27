@@ -58,9 +58,9 @@ CREATE TABLE IF NOT EXISTS public.rating (
 ## 3. Tabel Genre Film
 Tabel genre terdiri dari 3 atribut yaitu `director_id`, `movie_id`, `genre`.
 
-`director` = sutradara film
-`movie_id` = id dari masing-masing film yang bersifat unik
-`genre` = klasifikasi atau jenis dari film yang dibuat seperti triller, 
+`director` = sutradara film <br />
+`movie_id` = id dari masing-masing film yang bersifat unik <br />
+`genre` = klasifikasi atau jenis dari film yang dibuat seperti triller <br />
 ```sql
 CREATE TABLE IF NOT EXISTS public.genre (
     director_id character varying(10) COLLATE pg_catalog."default" NOT NULL,
@@ -81,8 +81,8 @@ CREATE TABLE IF NOT EXISTS public.genre (
 ## 4. Tabel Daftar Pemain Film
 Tabel daftar pemain film terdiri dari 2 atribut yaitu `movie_id`, dan `pemain_film`.
 
-`movie_id` = id dari masing-masing film yang bersifat unik
-`pemain_film` = aktor/aktris yang memerankan film
+`movie_id` = id dari masing-masing film yang bersifat unik <br />
+`pemain_film` = aktor/aktris yang memerankan film <br />
 ```sql
 CREATE TABLE IF NOT EXISTS public.pemain_film (
     movie_id text COLLATE pg_catalog."default" NOT NULL,
@@ -99,9 +99,9 @@ CREATE TABLE IF NOT EXISTS public.pemain_film (
 ## 5. Tabel Sutradara
 Tabel penulis naskah terdiri dari 3 atribut yaitu `director_id`, `first_name`, dan `last_name`.
 
-`director` = sutradara film
-`first_name` = nama depan dari sutradara film
-`last_name` = nama belakang dari sutradara film
+`director` = sutradara film <br />
+`first_name` = nama depan dari sutradara film <br />
+`last_name` = nama belakang dari sutradara film <br />
 ```sql
 CREATE TABLE IF NOT EXISTS public.director (
     director_id text COLLATE pg_catalog."default" NOT NULL,
