@@ -16,7 +16,7 @@ Berdasarkan database yang kami kembangkan, nantinya pengguna dapat mencari film 
 ![rating_new](https://user-images.githubusercontent.com/125889903/221503018-4e6b78bb-15ab-4a35-8803-2d90f8cec8d6.png)
 
 ## 1. Tabel Judul Film
-Tabel judul terdiri dari 4 atribut yaitu `movie_id`, `judul`, `tahun` dan `durasi_film`.
+Tabel judul terdiri dari 4 atribut yaitu `movie_id`, `judul`, `tahun` dan `durasi_film`. Adapun yang menjadi primary key dalam tabel ini adalah `movie_id`.
 
 `movie_id` = id dari masing-masing film yang bersifat unik <br /> 
 `judul` = judul dari 250 film <br /> 
