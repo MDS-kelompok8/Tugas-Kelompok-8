@@ -1,5 +1,5 @@
 # *DATABASE RATING FILM BERDASARKAN IMDB* 
-![gambar film review](https://user-images.githubusercontent.com/125889903/221512667-6f595242-8ff4-4280-b7bf-0cfb1192f9ba.png)
+![gambar film review](https://user-images.githubusercontent.com/125889903/221736359-49976bea-fa63-47e5-99fc-5f4e006d204d.png)
 
 ```sql
 Tim:
@@ -7,8 +7,9 @@ Data manager: Sofia Octaviana (G1501221036)
 Shiny developer: Adzkar Adlu (G1501211033)
 Technical Writer: Nurzatil Aqmar (G1501222044)
 ```
-Dalam projek ini kelompok kami akan mengembangkan database yang memuat film dengan rekomendasi terbaik berdasarkan IMDB. Internet Movie Database alias IMDB merupakan situs pengulas dan rating film serta serial TV dengan mekanisme rating berdasarkan voting dari penonton. Website IMDB berisi tentang rekomendasi film terbaik atau populer yang terdiri dari 250 film. IMDB 
-Berdasarkan database yang kami kembangkan, nantinya pengguna dapat mencari film yang diinginkan berdasarkan kategori pemain film, tahun rilis, dan sebagainya.
+Dalam projek ini kelompok kami akan mengembangkan database yang memuat film dengan rekomendasi terbaik berdasarkan IMDB. Internet Movie Database alias IMDB merupakan web yang berisi tentang informasi yang berkaitan film, video rumahan, acara televisi, serta sebagai situs pengulas dan rating film dan serial TV dengan mekanisme rating berdasarkan voting dari penonton. Website IMDB berisi tentang rekomendasi film terbaik atau populer yang terdiri dari 250 film. IMDb Top 250 adalah daftar dari 250 film berperingkat teratas, berdasarkan peringkat oleh pengguna terdaftar dari situs web menggunakan suatu metode. 
+Database yang diperoleh menggunakan teknik Web Scraping di web IMDB. Web Scraping merupakan teknik pengambilan suatu data atau informasi tertentu dengan jumlah besar untuk nantinya digunakan dalam berbagai keperluan seperti riset, analisis dan lainnya. 
+Berdasarkan database yang akan kami kembangkan, nantinya pengguna dapat mencari film yang diinginkan berdasarkan kategori pemain film, tahun rilis, dan sebagainya.
 ***
 
 ## Entity Relationship Diagram
@@ -56,6 +57,9 @@ CREATE TABLE IF NOT EXISTS public.rating (
 
 );
 ```
+Data dalam tabel ini diperoleh dari hasil scrapping website IMDB sebanyak 250 film. Adapun data dari tabel rating film akan membentuk tampilan seperti di bawah ini setelah diimport ke PostgreSQL.
+![rating](https://user-images.githubusercontent.com/125889903/221735741-1ebf0b9a-8a87-400b-854f-dd9a9f58429a.jpeg)
+
 
 ## 3. Tabel Genre Film
 Tabel genre terdiri dari 3 atribut yaitu `director_id`, `movie_id`, `genre`.
@@ -79,6 +83,9 @@ CREATE TABLE IF NOT EXISTS public.genre (
         ON DELETE NO ACTION
 );
 ```
+Data dalam tabel ini diperoleh dari hasil scrapping website IMDB sebanyak 250 film. Adapun data dari tabel genre film akan membentuk tampilan seperti di bawah ini setelah diimport ke PostgreSQL.
+![genre](https://user-images.githubusercontent.com/125889903/221736248-3cdaa82f-a95d-4bb1-bca2-68ffc01b5507.jpeg)
+
 
 ## 4. Tabel Daftar Pemain Film
 Tabel daftar pemain film terdiri dari 2 atribut yaitu `movie_id`, dan `pemain_film`.
@@ -97,6 +104,9 @@ CREATE TABLE IF NOT EXISTS public.pemain_film (
 
 );
 ```
+Data dalam tabel ini diperoleh dari hasil scrapping website IMDB sebanyak 250 film. Adapun data dari tabel pemain film akan membentuk tampilan seperti di bawah ini setelah diimport ke PostgreSQL.
+![pemain_film](https://user-images.githubusercontent.com/125889903/221735678-5c2ce9f4-6ad2-4849-9566-84e8bde28409.jpeg)
+
 
 ## 5. Tabel Sutradara
 Tabel penulis naskah terdiri dari 3 atribut yaitu `director_id`, `first_name`, dan `last_name`.
@@ -112,3 +122,5 @@ CREATE TABLE IF NOT EXISTS public.director (
     CONSTRAINT director_pkey PRIMARY KEY (director_id)
 );
 ```
+Data dalam tabel ini diperoleh dari hasil scrapping website IMDB sebanyak 250 film. Adapun data dari tabel director akan membentuk tampilan seperti di bawah ini setelah diimport ke PostgreSQL.
+![director](https://user-images.githubusercontent.com/125889903/221735871-f67623ff-4c19-41d7-b339-aeafa432288c.jpeg)
