@@ -12,9 +12,14 @@ Database yang diperoleh menggunakan teknik Web Scraping di web IMDB. Web Scrapin
 Berdasarkan database yang akan kami kembangkan, nantinya pengguna dapat mencari film yang diinginkan berdasarkan kategori pemain film, tahun rilis, dan sebagainya.
 ***
 
-## Entity Relationship Diagram
+## Skema Entity Relationship Diagram
 
 ![rating_new](https://user-images.githubusercontent.com/125889903/221503018-4e6b78bb-15ab-4a35-8803-2d90f8cec8d6.png)
+
+## Entity Relationship Diagram
+
+<img width="462" alt="ERD" src="https://user-images.githubusercontent.com/125889903/221746683-1524b2ab-479a-48e2-ab31-569a27cdcbb2.png">
+
 
 ## 1. Tabel Judul Film
 Tabel judul terdiri dari 4 atribut yaitu `movie_id`, `judul`, `tahun` dan `durasi_film`. Adapun yang menjadi primary key dalam tabel ini adalah `movie_id`.
