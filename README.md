@@ -32,6 +32,9 @@ CREATE TABLE IF NOT EXISTS public.judul (
     CONSTRAINT judul_pkey PRIMARY KEY (movie_id)
 );
 ```
+Data dalam tabel ini diperoleh dari hasil scrapping website IMDB sebanyak 250 film. Adapun data dari tabel judul film akan membentuk tampilan seperti di bawah ini setelah diimport ke PostgreSQL.
+
+![WhatsApp Image 2023-02-28 at 08 49 08](https://user-images.githubusercontent.com/125889903/221732554-5c5fe591-8c1d-4938-9bc1-fa08363b19ba.jpeg)
 
 ## 2. Tabel Rating Film 
 Tabel rating terdiri dari 4 atribut yaitu `movie_id`, `imdb_rating`, dan `vote`.
