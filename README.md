@@ -84,7 +84,7 @@ CREATE TABLE IF NOT EXISTS public.genre (
 );
 ```
 Data dalam tabel ini diperoleh dari hasil scrapping website IMDB sebanyak 250 film. Adapun data dari tabel genre film akan membentuk tampilan seperti di bawah ini setelah diimport ke PostgreSQL.
-![genre](https://user-images.githubusercontent.com/125889903/221736248-3cdaa82f-a95d-4bb1-bca2-68ffc01b5507.jpeg)
+![WhatsApp Image 2023-02-28 at 09 50 01](https://user-images.githubusercontent.com/125889903/221741239-234cc827-847a-4d6e-b4be-d9616af78042.jpeg)
 
 
 ## 4. Tabel Daftar Pemain Film
