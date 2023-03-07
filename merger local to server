@@ -1,0 +1,3 @@
+Melakukan migrasi antara Database local di pgAdmin dengan server ElephantSQL
+
+setelah database local terkoneksi dengan database server, maka dilakukan import data from csv to database di local, dan secara otomatis data juga terupdate di server.
