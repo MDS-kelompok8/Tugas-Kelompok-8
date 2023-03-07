@@ -1,0 +1,22 @@
+library(RPostgreSQL)
+driver <- dbDriver('PostgreSQL')
+
+#1. set connection to ElephantSQL server database
+DB <- dbConnect(
+  driver,
+  dbname="khmfkuiw", #User & Default database
+  host="topsy.db.elephantsql.com",  #Server
+  #port=5433 (tidak butuh koneksi ke port->port hanya untuk lokal),
+  user="khmfkuiw", # User & Default database
+  password="eFrV3Tm99VjjdDI2sjLjdptr8_JIK90g" #Password
+)
+
+#2. Set connection to local database
+dbHost <- dbConnect(
+  driver,
+  dbname="hospital",
+  host="localhost",
+  port=5432,
+  user="postgres",
+  password="Sofia123"
+)
