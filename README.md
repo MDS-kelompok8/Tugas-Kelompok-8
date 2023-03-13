@@ -23,7 +23,7 @@ Berikut url ShinyApps rating film yang telah kami kembangkan:
 
 | url                      | login          | password |
 | ------------------------ | -------------- | -------- |
-| https://sofiaoct.shinyapps.io/ratingfilm/ | sofiaoctv@gmail.com |       |
+| https://sofiaoct.shinyapps.io/ratingfilm/ | sofiaoctv@gmail.com | forMDS321 |
 
 ***
 
