@@ -10,8 +10,11 @@ Technical Writer: Nurzatil Aqmar (G1501222044)
 ## :bookmark_tabs: Menu
 
 - [Rating Film](#scroll-overview)
+- [Screenshot](#rice_scene-screenshot)
+- [Demo](#dvd-demo)
 - [Skema Database](#floppy_disk-skema-database)
 - [ERD](#rotating_light-erd)
+
 
 ## :scroll: Rating Film
 
@@ -19,6 +22,12 @@ Dalam projek ini kelompok kami akan mengembangkan database yang memuat film deng
 Database yang diperoleh menggunakan teknik Web Scraping di web IMDB. Web Scraping merupakan teknik pengambilan suatu data atau informasi tertentu dengan jumlah besar untuk nantinya digunakan dalam berbagai keperluan seperti riset, analisis dan lainnya. 
 Berdasarkan database yang akan kami kembangkan, nantinya pengguna dapat mencari film yang diinginkan berdasarkan kategori pemain film, tahun rilis, dan sebagainya.
 
+## :rice_scene: Screenshot
+
+<img width="938" alt="ss shiny" src="https://user-images.githubusercontent.com/125889903/224751827-e9e90684-7f45-4eb3-9ca4-7822d90491bd.png">
+
+
+## :dvd: Demo
 Berikut url ShinyApps rating film yang telah kami kembangkan:
 
 | url                      | login          | password |
