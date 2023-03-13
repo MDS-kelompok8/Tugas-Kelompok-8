@@ -10,15 +10,8 @@ Technical Writer: Nurzatil Aqmar (G1501222044)
 ## :bookmark_tabs: Menu
 
 - [Rating Film](#scroll-overview)
-- [Screenshot](#rice_scene-screenshot)
-- [Demo](#dvd-demo)
-- [Dokumentasi](#blue_book-documentation)
-- [Requirements](#exclamation-requirements)
 - [Skema Database](#floppy_disk-skema-database)
 - [ERD](#rotating_light-erd)
-- [Deskripsi Data](#heavy_check_mark-deskripsi-data)
-- [Struktur Folder](#open_file_folder-stuktur-folder)
-- [Tim Pengembang](#smiley_cat-tim-pengembang)
 
 ## :scroll: Rating Film
 
