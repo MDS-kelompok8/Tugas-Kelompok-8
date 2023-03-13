@@ -18,6 +18,8 @@ Technical Writer: Nurzatil Aqmar (G1501222044)
 Dalam projek ini kelompok kami akan mengembangkan database yang memuat film dengan rekomendasi terbaik berdasarkan IMDB. Internet Movie Database alias IMDB merupakan web yang berisi tentang informasi yang berkaitan film, video rumahan, acara televisi, serta sebagai situs pengulas dan rating film dan serial TV dengan mekanisme rating berdasarkan voting dari penonton. Website IMDB berisi tentang rekomendasi film terbaik atau populer yang terdiri dari 250 film. IMDb Top 250 adalah daftar dari 250 film berperingkat teratas, berdasarkan peringkat oleh pengguna terdaftar dari situs web menggunakan suatu metode. 
 Database yang diperoleh menggunakan teknik Web Scraping di web IMDB. Web Scraping merupakan teknik pengambilan suatu data atau informasi tertentu dengan jumlah besar untuk nantinya digunakan dalam berbagai keperluan seperti riset, analisis dan lainnya. 
 Berdasarkan database yang akan kami kembangkan, nantinya pengguna dapat mencari film yang diinginkan berdasarkan kategori pemain film, tahun rilis, dan sebagainya.
+
+shinyapps url: https://sofiaoct.shinyapps.io/ratingfilm/
 ***
 
 ## :floppy_disk: Skema Database
