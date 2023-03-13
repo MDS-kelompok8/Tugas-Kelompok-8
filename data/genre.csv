@@ -1,0 +1,251 @@
+director_id;movie_id;genre
+DR-1;MV-1;Drama            
+DR-2;MV-2;Crime, Drama            
+DR-3;MV-3;Action, Crime, Drama            
+DR-4;MV-4;Crime, Drama            
+DR-5;MV-5;Crime, Drama            
+DR-6;MV-6;Biography, Drama, History            
+DR-7;MV-7;Adventure, Drama, Fantasy            
+DR-8;MV-8;Drama            
+DR-9;MV-9;Western            
+DR-10;MV-10;Drama, Romance            
+DR-11;MV-11;Action, Adventure, Sci-Fi            
+DR-12;MV-12;Adventure, Drama, Fantasy            
+DR-13;MV-13;Drama            
+DR-14;MV-14;Action, Biography, Drama            
+DR-15;MV-15;Action, Adventure, Fantasy            
+DR-16;MV-16;Action, Adventure, Fantasy            
+DR-17;MV-17;Action, Sci-Fi            
+DR-18;MV-18;Biography, Crime, Drama            
+DR-19;MV-19;Drama            
+DR-20;MV-20;Crime, Drama            
+DR-21;MV-21;Adventure, Drama, Fantasy            
+DR-22;MV-22;Adventure, Drama            
+DR-23;MV-23;Adventure, Drama, Sci-Fi            
+DR-24;MV-24;Animation, Drama, Fantasy            
+DR-25;MV-25;Crime, Drama, Thriller            
+DR-26;MV-26;Action, Crime, Drama            
+DR-27;MV-27;Crime, Drama, Mystery            
+DR-28;MV-28;Drama, War            
+DR-29;MV-29;Crime, Mystery, Thriller            
+DR-30;MV-30;Animation, Adventure, Family            
+DR-31;MV-31;Comedy, Drama, Romance            
+DR-32;MV-32;Biography, Comedy, Drama            
+DR-33;MV-33;Western            
+DR-34;MV-34;Drama, Family, Fantasy            
+DR-35;MV-35;Comedy, Drama, Romance            
+DR-36;MV-36;Drama, Family            
+DR-37;MV-37;Horror, Sci-Fi            
+DR-38;MV-38;Drama, Mystery, Sci-Fi            
+DR-39;MV-39;Action, Adventure, Drama            
+DR-40;MV-40;Action, Thriller            
+DR-41;MV-41;Drama, Music            
+DR-42;MV-42;Mystery, Thriller            
+DR-43;MV-43;Crime, Drama, Fantasy            
+DR-44;MV-44;Drama, War            
+DR-45;MV-45;Horror, Mystery, Thriller            
+DR-46;MV-46;Action, Adventure            
+DR-47;MV-47;Action, Sci-Fi            
+DR-48;MV-48;Biography, Drama, Music            
+DR-49;MV-49;Drama, Thriller            
+DR-50;MV-50;Comedy            
+DR-51;MV-51;Drama            
+DR-52;MV-52;Adventure, Comedy, Sci-Fi            
+DR-53;MV-53;Crime, Drama            
+DR-54;MV-54;Action, Thriller            
+DR-55;MV-55;Biography, Drama            
+DR-56;MV-56;Animation, Adventure, Comedy            
+DR-57;MV-57;Drama            
+DR-58;MV-58;Adventure, Family, Fantasy            
+DR-59;MV-59;Action, Adventure            
+DR-60;MV-60;Action, Adventure, Sci-Fi            
+DR-61;MV-61;Action, Crime, Thriller            
+DR-62;MV-62;Action, Drama, Sci-Fi            
+DR-63;MV-63;Animation, Adventure, Comedy            
+DR-64;MV-64;Horror            
+DR-65;MV-65;Crime, Thriller            
+DR-66;MV-66;Action, Adventure, Fantasy            
+DR-67;MV-67;Action, Adventure, Thriller            
+DR-68;MV-68;Drama, Sport            
+DR-69;MV-69;Animation, Adventure, Comedy            
+DR-70;MV-70;Action, Thriller            
+DR-71;MV-71;Animation, Adventure, Comedy            
+DR-72;MV-72;Action, Drama, Sci-Fi            
+DR-73;MV-73;Animation, Adventure, Family            
+DR-74;MV-74;Action, Adventure, Sci-Fi            
+DR-75;MV-75;Comedy            
+DR-76;MV-76;Drama, History, War            
+DR-77;MV-77;Drama, Romance, War            
+DR-78;MV-78;Mystery, Thriller            
+DR-79;MV-79;Drama, Film-Noir            
+DR-80;MV-80;Animation, Drama, War            
+DR-81;MV-81;Drama            
+DR-82;MV-82;Comedy, Drama, War            
+DR-83;MV-83;Comedy, Drama, Family            
+DR-84;MV-84;Drama, War            
+DR-85;MV-85;Drama, Family            
+DR-86;MV-86;Action, Adventure, Sci-Fi            
+DR-87;MV-87;Drama, Western            
+DR-88;MV-88;Drama            
+DR-89;MV-89;Drama, Horror            
+DR-90;MV-90;Drama            
+DR-91;MV-91;Biography, Drama, History            
+DR-92;MV-92;Action, Drama, Mystery            
+DR-93;MV-93;Action, Adventure, Fantasy            
+DR-94;MV-94;Adventure, Mystery, Thriller            
+DR-95;MV-95;Comedy, Romance            
+DR-96;MV-96;Crime, Drama            
+DR-97;MV-97;Comedy, Drama            
+DR-98;MV-98;Animation, Adventure, Fantasy            
+DR-99;MV-99;Mystery, Romance, Thriller            
+DR-100;MV-100;Drama, Mystery            
+DR-101;MV-101;Adventure, Drama, Thriller            
+DR-102;MV-102;Crime, Mystery, Thriller            
+DR-103;MV-103;Drama, Thriller            
+DR-104;MV-104;Drama, Family            
+DR-105;MV-105;Crime, Drama, Mystery            
+DR-106;MV-106;Crime, Drama, Mystery            
+DR-107;MV-107;Crime, Drama, Thriller            
+DR-108;MV-108;Comedy, Drama, Music            
+DR-109;MV-109;Adventure, Drama, War            
+DR-110;MV-110;Drama, Romance            
+DR-111;MV-111;Comedy, Crime            
+DR-112;MV-112;Action, Adventure            
+DR-113;MV-113;Crime, Drama            
+DR-114;MV-114;Drama, Romance, Sci-Fi            
+DR-115;MV-115;Crime, Drama, Sci-Fi            
+DR-116;MV-116;Crime, Drama, Thriller            
+DR-117;MV-117;Drama, War            
+DR-118;MV-118;Adventure, Sci-Fi            
+DR-119;MV-119;Biography, Drama, History            
+DR-120;MV-120;Drama            
+DR-121;MV-121;Crime, Drama, Mystery            
+DR-122;MV-122;Crime, Drama            
+DR-123;MV-123;Animation, Family, Fantasy            
+DR-124;MV-124;Crime, Drama, Thriller            
+DR-125;MV-125;Crime, Drama, Thriller            
+DR-126;MV-126;Adventure, Drama, Family            
+DR-127;MV-127;Animation, Adventure, Drama            
+DR-128;MV-128;Comedy, Family, Fantasy            
+DR-129;MV-129;Adventure, Sci-Fi            
+DR-130;MV-130;Crime, Drama            
+DR-131;MV-131;Biography, Crime, Drama            
+DR-132;MV-132;Animation, Adventure, Comedy            
+DR-133;MV-133;Biography, Drama, History            
+DR-134;MV-134;Crime, Drama            
+DR-135;MV-135;Adventure, Comedy, Fantasy            
+DR-136;MV-136;Adventure, Biography, Drama            
+DR-137;MV-137;Animation, Adventure, Comedy            
+DR-138;MV-138;Comedy, Music, Romance            
+DR-139;MV-139;Comedy, Musical, Romance            
+DR-140;MV-140;Drama, War            
+DR-141;MV-141;Drama, Sci-Fi            
+DR-142;MV-142;Comedy, Crime, Drama            
+DR-143;MV-143;Film-Noir, Mystery, Thriller            
+DR-144;MV-144;Western            
+DR-145;MV-145;Comedy, Drama, Romance            
+DR-146;MV-146;Drama, War            
+DR-147;MV-147;Drama            
+DR-148;MV-148;Comedy, Drama            
+DR-149;MV-149;Crime, Drama, Film-Noir            
+DR-150;MV-150;Crime, Drama, Mystery            
+DR-151;MV-151;Drama            
+DR-152;MV-152;Biography, Drama, History            
+DR-153;MV-153;Action, Comedy, Crime            
+DR-154;MV-154;Action, Comedy, Crime            
+DR-155;MV-155;Adventure, Drama, Western            
+DR-156;MV-156;Comedy, Drama, Family            
+DR-157;MV-157;Drama            
+DR-158;MV-158;Crime, Drama, Mystery            
+DR-159;MV-159;Drama, Romance            
+DR-160;MV-160;Biography, Drama, History            
+DR-161;MV-161;Action, Adventure, Comedy            
+DR-162;MV-162;Comedy, Drama, Musical            
+DR-163;MV-163;Comedy, Family, Romance            
+DR-164;MV-164;Action, Comedy, Crime            
+DR-165;MV-165;Biography, Drama, History            
+DR-166;MV-166;Drama            
+DR-167;MV-167;Action, Sci-Fi, Thriller            
+DR-168;MV-168;Drama, Thriller            
+DR-169;MV-169;Drama, History, Romance            
+DR-170;MV-170;Crime, Drama, Thriller            
+DR-171;MV-171;Comedy, Crime            
+DR-172;MV-172;Drama, Sport            
+DR-173;MV-173;Drama, Western            
+DR-174;MV-174;Drama, Fantasy, War            
+DR-175;MV-175;Animation, Adventure, Comedy            
+DR-176;MV-176;Biography, Drama            
+DR-177;MV-177;Drama, War            
+DR-178;MV-178;Horror, Mystery, Sci-Fi            
+DR-179;MV-179;Comedy, Crime            
+DR-180;MV-180;Crime, Drama            
+DR-181;MV-181;Biography, Drama, Sport            
+DR-182;MV-182;Animation, Adventure, Family            
+DR-183;MV-183;Drama, Mystery, Romance            
+DR-184;MV-184;Drama, Mystery, War            
+DR-185;MV-185;Drama, Mystery, Thriller            
+DR-186;MV-186;Adventure, Drama, History            
+DR-187;MV-187;Animation, Family, Fantasy            
+DR-188;MV-188;Drama, Fantasy            
+DR-189;MV-189;Crime, Drama, Thriller            
+DR-190;MV-190;Adventure, Drama, War            
+DR-191;MV-191;Action, Drama            
+DR-192;MV-192;Drama, Mystery, Romance            
+DR-193;MV-193;Animation, Comedy, Drama            
+DR-194;MV-194;Crime, Thriller            
+DR-195;MV-195;Comedy, Drama            
+DR-196;MV-196;Comedy, Romance            
+DR-197;MV-197;Drama, Romance            
+DR-198;MV-198;Adventure, Drama, Thriller            
+DR-199;MV-199;Adventure, Comedy, Drama            
+DR-200;MV-200;Action, Adventure, Comedy            
+DR-201;MV-201;Drama            
+DR-202;MV-202;Action, Adventure, Comedy            
+DR-203;MV-203;Action, Adventure, Sci-Fi            
+DR-204;MV-204;Action, Adventure, Sci-Fi            
+DR-205;MV-205;Crime, Drama, Thriller            
+DR-206;MV-206;Drama, Mystery, Thriller            
+DR-207;MV-207;Crime, Drama, Mystery            
+DR-208;MV-208;Drama, Horror, Thriller            
+DR-209;MV-209;Biography, Crime, Drama            
+DR-210;MV-210;Adventure, Family, Fantasy            
+DR-211;MV-211;Drama, Sci-Fi, Thriller            
+DR-212;MV-212;Adventure, Drama            
+DR-213;MV-213;Adventure, Biography, Drama            
+DR-214;MV-214;Drama, Mystery, Thriller            
+DR-215;MV-215;Mystery, Thriller            
+DR-216;MV-216;Adventure, Comedy, Crime            
+DR-217;MV-217;Drama            
+DR-218;MV-218;Drama            
+DR-219;MV-219;Biography, Crime, Drama            
+DR-220;MV-220;Biography, Drama, History            
+DR-221;MV-221;Adventure, Family, Fantasy            
+DR-222;MV-222;Action, Biography, Drama            
+DR-223;MV-223;Comedy, Drama, Sci-Fi            
+DR-224;MV-224;Drama, War            
+DR-225;MV-225;Drama, Sport            
+DR-226;MV-226;Action, Mystery, Thriller            
+DR-227;MV-227;Drama, Sci-Fi            
+DR-228;MV-228;Comedy, Drama, Thriller            
+DR-229;MV-229;Drama, Family            
+DR-230;MV-230;Animation, Action, Adventure            
+DR-231;MV-231;Comedy, Romance            
+DR-232;MV-232;Adventure, Drama, History            
+DR-233;MV-233;Drama, Romance            
+DR-234;MV-234;Drama, Romance            
+DR-235;MV-235;Biography, Drama, History            
+DR-236;MV-236;Biography, Crime, Drama            
+DR-237;MV-237;Biography, Drama, History            
+DR-238;MV-238;Adventure, Drama, History            
+DR-239;MV-239;Action, Crime, Drama            
+DR-240;MV-240;Comedy            
+DR-241;MV-241;Crime, Drama, Mystery            
+DR-242;MV-242;Crime, Drama            
+DR-243;MV-243;Biography, Drama            
+DR-244;MV-244;Drama, Thriller            
+DR-245;MV-245;Drama            
+DR-246;MV-246;Animation, Adventure, Fantasy            
+DR-247;MV-247;Film-Noir, Mystery            
+DR-248;MV-248;Drama, Thriller            
+DR-249;MV-249;Drama, History            
+DR-250;MV-250;Adventure, Drama, Thriller            
