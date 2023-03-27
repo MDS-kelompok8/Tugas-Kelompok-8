@@ -4,6 +4,18 @@ library(DT)
 library(RPostgreSQL)
 library(DBI)
 
+connectDB <- function(){
+  driver <- dbDriver('PostgreSQL')
+  DB <- dbConnect(
+    driver,
+    dbname="rating", #User & Default database
+    host="localhost",  #Server
+    port= 5432,
+    user="postgres", # User & Default database
+    password="Sofia123" #Password
+  )
+}
+
 judul_film <- dbGetQuery(connectDB(), "SELECT judul FROM judul;")
 genre_film <- dbGetQuery(connectDB(), "SELECT genre FROM genre;") 
 
@@ -18,14 +30,14 @@ dashboardPage(
         text = "Beranda",
         tabName = "beranda",
         icon = icon("house")
-  ),
+      ),
       menuItem(
         text = "Movie List",
         tabName = "tab_iq8h44dkce",
         icon = icon("film")
       ),
       menuItem(
-        text = "Pemain Film",
+        text = "Actor and Actress",
         tabName = "tab_9oud9ac3yp",
         icon = icon("person")
       ),
@@ -35,7 +47,7 @@ dashboardPage(
         icon = icon("mask")
       ),
       menuItem(
-        text = "Rating",
+        text = "Most Popular Movie",
         tabName = "tab_7lbhhwdq4f",
         icon = icon("ranking-star")
       ),
@@ -59,11 +71,6 @@ dashboardPage(
       ),
       tabItem(
         tabName = "tab_9oud9ac3yp",
-        selectInput(
-          inputId = "listJudul",
-          label = "Masukkan judul film",
-          choices = NULL
-        ),
         h2(
           "Daftar Pemain Film"
         ),
@@ -79,7 +86,7 @@ dashboardPage(
           choices = NULL
         ),
         h2(
-          "Genre"
+          "Movie List by Genre"
         ),
         dataTableOutput(
           outputId = "tblGenre"
@@ -87,13 +94,8 @@ dashboardPage(
       ),
       tabItem(
         tabName = "tab_7lbhhwdq4f",
-        selectInput(
-          inputId = "ListRating",
-          label = "Rating",
-          choices = NULL
-        ),
         h2(
-          "Rating"
+          "Daftar Film Teratas Berdasarkan Rating"
         ),
         dataTableOutput(
           outputId = "tblRating"
@@ -101,13 +103,8 @@ dashboardPage(
       ),
       tabItem(
         tabName = "tab_xi0zslveui",
-        selectInput(
-          inputId = "listDirector",
-          label = "Director",
-          choices = NULL
-        ),
         h2(
-          "Daftar Director"
+          "Daftar Sutradara"
         ),
         dataTableOutput(
           outputId = "tblDirector"
