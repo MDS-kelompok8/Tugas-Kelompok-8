@@ -28,19 +28,21 @@ function(input, output, session) {
     p.pemain_film as Pemain_Film
       FROM judul as j
       INNER JOIN pemain_film as p
-        ON j.movie_id = p.movie_id;"
+      ON j.movie_id = p.movie_id;"
     pemain_film<-dbGetQuery(DB, q2)
     dbDisconnect(DB)
     
     pemain_film
   })
   
-  output$tblGenre <- renderDataTable({
+  output$tblRilis <- renderDataTable({
     DB <- connectDB()
-    genre<-dbReadTable(DB, 'genre')
+    q3 <- paste0("SELECT * FROM judul
+                 WHERE tahun = '", input$tahun_rilis,"';")
+    tahun<-dbGetQuery(DB, q3)
     dbDisconnect(DB)
     
-    genre
+    tahun
   })
   
   output$tblRating <- renderDataTable({
@@ -49,7 +51,7 @@ function(input, output, session) {
     r.imdb_rating as rating
       FROM judul as j
       INNER JOIN rating as r
-        ON j.movie_id = r.movie_id
+      ON j.movie_id = r.movie_id
         ORDER BY rating DESC;"
     rating<-dbGetQuery(DB, q4)
     dbDisconnect(DB)
@@ -61,7 +63,7 @@ function(input, output, session) {
     DB <- connectDB()
     q5 <- "SELECT j.judul as judul_film, j.tahun as tahun_rilis,
     CONCAT(d.first_name, ' ', d.last_name) as Sutradara, g.genre
-      FROM judul as j
+    FROM judul as j
       INNER JOIN genre as g
         ON j.movie_id = g.movie_id
       INNER JOIN director as d
@@ -72,29 +74,4 @@ function(input, output, session) {
     
     director
   })
-  
-  listJudul <- reactive({
-    DB <- connectDB()
-    judul<-dbReadTable(DB, 'judul')
-    dbDisconnect(DB)
-    
-    judul$judul
-  })
-  
-  output$loadJudul <- renderUI({
-    selectInput("listJudul", "judul", choices = listJudul())
-  })
-  
-  listGenre <- reactive({
-    DB <- connectDB()
-    genre<-dbReadTable(DB, 'genre')
-    dbDisconnect(DB)
-    
-    genre$movie_id
-  })
-  
-  output$loadGenre <- renderUI({
-    selectInput("listGenre", "genre", choices = listGenre())
-  })
-  
 }
