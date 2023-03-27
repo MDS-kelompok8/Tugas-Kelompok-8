@@ -16,8 +16,7 @@ connectDB <- function(){
   )
 }
 
-judul_film <- dbGetQuery(connectDB(), "SELECT judul FROM judul;")
-genre_film <- dbGetQuery(connectDB(), "SELECT genre FROM genre;") 
+tahun <- dbGetQuery(connectDB(), "SELECT tahun FROM judul;")
 
 dashboardPage(
   title = "World Rating Movie",
@@ -42,9 +41,9 @@ dashboardPage(
         icon = icon("person")
       ),
       menuItem(
-        text = "Genre",
+        text = "Release Year",
         tabName = "tab_kfa4noo5fz",
-        icon = icon("mask")
+        icon = icon("calendar")
       ),
       menuItem(
         text = "Most Popular Movie",
@@ -55,6 +54,11 @@ dashboardPage(
         text = "Director",
         tabName = "tab_xi0zslveui",
         icon = icon("pen")
+      ),
+      menuItem(
+        text = "Year Release Distribution",
+        tabName = "tab_iq8h44dk",
+        icon = icon("chart-line")
       )
     )
   ),
@@ -80,16 +84,16 @@ dashboardPage(
       ),
       tabItem(
         tabName = "tab_kfa4noo5fz",
-        selectInput(
-          inputId = "listGenre",
-          label = "Genre",
-          choices = NULL
+        selectInput( 
+          inputId = "tahun_rilis",
+          label = "Tahun Rilis",
+          choices = tahun
         ),
         h2(
-          "Movie List by Genre"
+          "Judul Film Berdasarkan Tahun Rilis"
         ),
         dataTableOutput(
-          outputId = "tblGenre"
+          outputId = "tblRilis"
         )
       ),
       tabItem(
@@ -109,8 +113,7 @@ dashboardPage(
         dataTableOutput(
           outputId = "tblDirector"
         )
-      )  
+      ),
     )
-    
   )
 )
