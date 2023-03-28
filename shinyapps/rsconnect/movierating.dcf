@@ -1,0 +1,13 @@
+name: movierating
+title: movierating
+username:
+account: sofiaoct
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 8690757
+bundleId: 7016037
+url: https://sofiaoct.shinyapps.io/movierating/
+when: 1679963493.511
+lastSyncTime: 1679963493.51102
+asMultiple: FALSE
+asStatic: FALSE
