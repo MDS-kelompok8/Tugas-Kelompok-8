@@ -24,7 +24,12 @@ Berdasarkan database yang akan kami kembangkan, nantinya pengguna dapat mencari 
 
 ## :rice_scene: Screenshot
 
-<img width="938" alt="ss shiny" src="https://user-images.githubusercontent.com/125889903/224751827-e9e90684-7f45-4eb3-9ca4-7822d90491bd.png">
+<img width="938" alt="movie listt" src="https://user-images.githubusercontent.com/111562416/228098962-8e09e02d-6cf5-4b6d-8ca9-a17c0d5a3b7a.png">
+<img width="938" alt="pemain film" src="https://user-images.githubusercontent.com/111562416/228099001-cdbc3a7b-c084-4d11-977e-dde86df359ab.png">
+<img width="941" alt="tahun rilis" src="https://user-images.githubusercontent.com/111562416/228099031-39fce2f9-bdb1-4a56-8757-75877721c818.png">
+<img width="940" alt="film populer" src="https://user-images.githubusercontent.com/111562416/228099101-1b486b83-1b50-4ace-a4b0-2ba799042c92.png">
+<img width="941" alt="sutradara" src="https://user-images.githubusercontent.com/111562416/228099169-f12ddfeb-f290-4fa7-b892-d81d9a5abf06.png">
+
 
 
 ## :dvd: Demo
@@ -32,7 +37,7 @@ Berikut url ShinyApps rating film yang telah kami kembangkan:
 
 | url                      | login          | password |
 | ------------------------ | -------------- | -------- |
-| https://sofiaoct.shinyapps.io/ratingfilm/ | sofiaoctv@gmail.com | forMDS321 |
+| https://sofiaoct.shinyapps.io/movierating/ | sofiaoctv@gmail.com | forMDS321 |
 
 ***
 
