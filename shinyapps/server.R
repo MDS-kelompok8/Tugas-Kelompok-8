@@ -8,7 +8,10 @@ connectDB <- function(){
     password="pGEDSp-s-V32WqGMpzXLnPgMfcBfPXRz" #Password
   )
 }
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
 
+#MovieList
 function(input, output, session) {
   output$tblJudul <- renderDataTable({
     DB <- connectDB()
@@ -19,7 +22,7 @@ function(input, output, session) {
     judul
   })
   
-  
+  #Actor and Actress
   output$tblPemain <- renderDataTable({
     DB <- connectDB()
     q2 <- "SELECT j.judul as Judul_Film,
@@ -34,6 +37,7 @@ function(input, output, session) {
     pemain_film
   })
   
+  #Release Year
   output$tblRilis <- renderDataTable({
     DB <- connectDB()
     q3 <- paste0("SELECT * FROM judul
@@ -44,6 +48,7 @@ function(input, output, session) {
     tahun
   })
   
+  #Most Popular Movie
   output$tblRating <- renderDataTable({
     DB <- connectDB()
     q4 <- "SELECT j.judul as Judul_Film,
@@ -58,6 +63,7 @@ function(input, output, session) {
     rating
   })
   
+  #Director
   output$tblDirector <- renderDataTable({
     DB <- connectDB()
     q5 <- "SELECT j.judul as judul_film, j.tahun as tahun_rilis,
