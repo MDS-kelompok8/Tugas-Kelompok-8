@@ -4,6 +4,7 @@ library(DT)
 library(RPostgreSQL)
 library(DBI)
 
+--------------------------------------------------------------------------------------
 connectDB <- function(){
   driver <- dbDriver('PostgreSQL')
   DB <- dbConnect(
@@ -14,9 +15,11 @@ connectDB <- function(){
     password="pGEDSp-s-V32WqGMpzXLnPgMfcBfPXRz" #Password
   )
 }
+--------------------------------------------------------------------------------------
 
 tahun <- dbGetQuery(connectDB(), "SELECT tahun FROM judul;")
 
+#Title Web Page
 dashboardPage(
   title = "World Rating Movie",
   dashboardHeader(
